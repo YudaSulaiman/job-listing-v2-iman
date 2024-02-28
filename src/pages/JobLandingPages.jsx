@@ -25,6 +25,7 @@ function JobLandingPages() {
         }
       })
       .catch((error) => {
+        alert("Wrong username or password")
         console.error("Error:", error);
       });
 
