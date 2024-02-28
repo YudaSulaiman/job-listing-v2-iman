@@ -50,14 +50,6 @@ const JobContainer = ({id, logo, company, isNew, isFeatured, position, role, lev
                 </div>
                 <div>
                     <ul className="flex flex-wrap gap-4 border-t border-cyan-dark-grayish mt-4 pt-4 lg:border-0">
-                        {/* <li>
-                            <button onClick={FilterButton({role})}>
-                                <label class="bg-cyan-light-2 px-2 py-1.5 text-sm text-cyan-dark font-bold rounded-l-md  hover:bg-cyan-dark hover:text-white rounded-r-md cursor-pointer">
-                                    {role}
-                                </label>
-                            </button>
-                        </li> */}
-
                         <li>
                             <FilterButton 
                                 filter={role}

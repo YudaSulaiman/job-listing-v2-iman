@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import image1 from "../assets/images/bg-header-desktop.svg";
 import JobContainer from "../components/JobContainer";
 import { jsonData } from "../data/data";
 
@@ -109,7 +108,7 @@ const JobPages = () => {
                                 <li key={index}>
                                   <button className={pageButtonStyle(index + 1)}
                                   onClick={() => paginate(index + 1)}>
-                                      {index + 1}
+                                    {index + 1}
                                   </button>
                                 </li>
                             ))}

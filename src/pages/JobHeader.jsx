@@ -2,6 +2,11 @@ import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
 function JobHeader() {
+  const handleLogOut = (e) => {
+    e.preventDefault();
+
+    localStorage.removeItem("isLogin");
+  };
   return (
     <>
       <header className="flex justify-center items-center bg-no-repeat bg-cover max-h-[20vh]">
@@ -12,12 +17,19 @@ function JobHeader() {
             alt="logo"
           />
         </Link>
+        <form onSubmit={handleLogOut}>
+          <button
+            style={{ backgroundColor: "#ff0000" }}
+            className=" hover:bg-[#eac77d] text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
+          >
+            Logout
+          </button>
+        </form>
       </header>
 
       <Outlet />
     </>
-    
-  )
+  );
 }
 
 export default JobHeader
