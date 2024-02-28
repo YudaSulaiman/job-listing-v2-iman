@@ -45,8 +45,8 @@ function JobLandingPages() {
           </p>
 
           <div className="flex justify-center">
-            <div className="flex w-full lg:w-1/2 justify-center items-center space-y-8">
-              <div className="w-full px-8 md:px-32 lg:px-24">
+            <div className="flex w-full justify-center items-center space-y-8">
+              <div className="w-full px-8">
                 <form
                   onSubmit={handleSubmit}
                   className="bg-white rounded-md shadow-2xl p-5"
